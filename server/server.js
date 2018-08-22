@@ -30,7 +30,7 @@ app.get('/todos/:id', (req, res) => {
         todo => {
             if(!todo)
                 return res.status(404).send('Resource not found');
-            res.send(todo);
+            res.send({todo});
         }
     ).catch(e => res.status(400).send('Hmm... something went wrong'));
 });
