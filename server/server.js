@@ -117,6 +117,8 @@ app.post('/users/login', (req, res) => {
     });
 })
 
+app.post('/users/token');
+
 app.listen(port, () => {
     console.log(`Started on port ${port}`);
 });
